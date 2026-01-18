@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ka">
   <head>
     <meta charset="UTF-8" />
@@ -9,7 +9,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/all.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -146,5 +147,160 @@
         </div>
       </div>
     </section>
+    <!-- testimonials section -->
+    <section class="testimonials-section">
+      <div class="container">
+        <h2 class="section-title">What our customers say about us</h2>
+        <div class="testimonials-grid">
+          <article class="testimonial-card">
+            <i class="fas fa-quote-right quote-icon"></i>
+            <div class="testimonial-header">
+              <div class="testimonial-image">
+                <img
+                  class="image-placeholder small"
+                  src="img/11776683.webp"
+                  alt="image icon 1"
+                />
+              </div>
+              <div class="testimonial-info">
+                <h4>ChiChi</h4>
+                <p>South Africa</p>
+              </div>
+            </div>
+            <p class="testimonial-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+              consectetur justo quis euismod vehicula. Quisque diam dui,
+              imperdiet et hendrerit in.
+            </p>
+          </article>
+          <article class="testimonial-card">
+            <i class="fas fa-quote-right quote-icon"></i>
+            <div class="testimonial-header">
+              <div class="testimonial-image">
+                <img
+                  class="image-placeholder small"
+                  src="img/Black_woman_with_women's_suit_10.jpg"
+                  alt="image icon 2"
+                />
+              </div>
+              <div class="testimonial-info">
+                <h4>Queen Rita</h4>
+                <p>USA</p>
+              </div>
+            </div>
+            <p class="testimonial-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+              consectetur justo quis euismod vehicula. Quisque diam dui,
+              imperdiet et hendrerit in.
+            </p>
+          </article>
+          <article class="testimonial-card">
+            <i class="fas fa-quote-right quote-icon"></i>
+            <div class="testimonial-header">
+              <div class="testimonial-image">
+                <img
+                  class="image-placeholder small"
+                  src="img/082223_16686_Dr-Marcheta-Evans-1-1.jpg.1.2x.generic.jpg"
+                  alt="image icon 3"
+                />
+              </div>
+              <div class="testimonial-info">
+                <h4>Gloria Uko</h4>
+                <p>Nigeria</p>
+              </div>
+            </div>
+            <p class="testimonial-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+              consectetur justo quis euismod vehicula. Quisque diam dui,
+              imperdiet et hendrerit in.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- newsletter section -->
+    <section class="newsletter">
+      <div class="container">
+        <h2>Subscribe to our newsletter</h2>
+        <p>
+          We recommend you to subscribe to our newsletter, drop your email below
+          to get daily update about us.
+        </p>
+        <form class="newsletter-form" id="newsletterForm">
+          <input
+            type="email"
+            id="newsletterEmail"
+            placeholder="Enter your email address"
+            required
+          />
+          <button type="submit" class="btn-primary">Subscribe</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <div class="footer-logo">
+              <span class="logo-icon">JD</span>
+              <span class="logo-text">Jo-Jean Imoh-Ita</span>
+            </div>
+            <p class="footer-address">
+              88/89 Peter Odili Road, Port Harcourt, Rivers State.
+            </p>
+          </div>
+          <div class="footer-section">
+            <div class="footer-links">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">Sign Up</a></li>
+              </ul>
+              <ul>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-section">
+            <h3>Connect With Us</h3>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; Jo-Jean Imoh-Ita. All right reserved. Designed by AMANI Art.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- cookies -->
+    <div class="cookie-banner" id="cookieBanner">
+      <div class="cookie-content">
+        <p>
+          We use cookies to improve your experience on our website. By
+          continuing to browse, you agree to our use of cookies.
+        </p>
+        <button class="btn-accept" id="acceptCookies">Accept</button>
+      </div>
+    </div>
+
+    <!-- scroll to top -->
+    <button class="scroll-top" id="scrollTop">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/script.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/validation.js"></script>
   </body>
 </html>
