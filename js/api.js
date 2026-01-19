@@ -4,37 +4,46 @@ async function fetchTestimonials() {
   try {
     let response = await fetch("https://jsonplaceholder.typicode.com/users");
     console.log(response);
-    if (!response.ok) {
-      throw "Server Error";
-    }
-    let data = await response.json();
 
+    if (!response.ok) {
+      throw new Error("Server Error");
+    }
+
+    let data = await response.json();
     const testimonials = data.slice(0, 3);
 
-    if (testimonialsContainer && testimonialsContainer.children.length === 0) {
+    if (testimonialsContainer) {
       testimonialsContainer.innerHTML = "";
 
-      testimonials.forEach((user, index) => {
+      testimonials.forEach((user) => {
         const testimonialCard = document.createElement("article");
         testimonialCard.className = "testimonial-card";
         testimonialCard.innerHTML = `
-                    <i class="fas fa-quote-right quote-icon"></i>
-                    <div class="testimonial-header">
-                        <div class="testimonial-image">
-                            <div class="image-placeholder small"></div>
-                        </div>
-                        <div class="testimonial-info">
-                            <h4>${user.name}</h4>
-                            <p>${user.address.city}</p>
-                        </div>
-                    </div>
-                    <p class="testimonial-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consectetur justo quis euismod vehicula. Quisque diam dui, imperdiet et hendrerit in.</p>
-                `;
+          <i class="fas fa-quote-right quote-icon"></i>
+          <div class="testimonial-header">
+            <div class="testimonial-image">
+              <div class="image-placeholder small"></div>
+            </div>
+            <div class="testimonial-info">
+              <h4>${user.name}</h4>
+              <p>${user.address.city}</p>
+            </div>
+          </div>
+          <p class="testimonial-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin consectetur justo quis euismod vehicula. Quisque diam dui, imperdiet et hendrerit in.</p>
+        `;
         testimonialsContainer.appendChild(testimonialCard);
       });
     }
   } catch (error) {
     console.error("Error fetching testimonials:", error);
+
+    if (testimonialsContainer) {
+      testimonialsContainer.innerHTML = `
+        <p style="grid-column: 1/-1; text-align: center; color: #666;">
+          Unable to load testimonials at this time. Please try again later.
+        </p>
+      `;
+    }
   }
 }
 
