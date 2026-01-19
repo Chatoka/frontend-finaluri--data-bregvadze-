@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ka">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Jo-Jean Imoh-Ita</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header" id="header">
+      <div class="container">
+        <nav class="navbar">
+          <div class="logo">
+            <span class="logo-icon">JD</span>
+            <div>
+              <span class="logo-text">Jo-Jean Imoh-Ita</span>
+              <p class="logo-tagline">TRANSFORM YOUR LIFE</p>
+            </div>
+          </div>
+
+          <ul class="nav-menu" id="navMenu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html" class="active">Contact Us</a></li>
+          </ul>
+
+          <div class="burger" id="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- contact form section -->
+    <section class="contact-form-section">
+      <div class="container">
+        <h1>Contact Us</h1>
+        <p class="contact-subtitle">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+          consectetur justo quis
+        </p>
+
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <input
+              type="text"
+              id="fullName"
+              name="fullName"
+              placeholder="Your full name"
+              required
+            />
+            <span class="error-message" id="nameError"></span>
+          </div>
+
+          <div class="form-group">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your email address"
+              required
+            />
+            <span class="error-message" id="emailError"></span>
+          </div>
+
+          <div class="form-group">
+            <div class="password-wrapper">
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Your password"
+                required
+              />
+              <button type="button" class="toggle-password" id="togglePassword">
+                <i class="fas fa-eye"></i>
+              </button>
+            </div>
+            <span class="error-message" id="passwordError"></span>
+          </div>
+
+          <div class="form-group">
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Write a note about your request"
+              required
+            ></textarea>
+            <span class="error-message" id="messageError"></span>
+          </div>
+
+          <button type="submit" class="btn-primary">Send</button>
+        </form>
+
+        <div class="success-message" id="successMessage">
+          <i class="fas fa-check-circle"></i>
+          <p>Your message has been sent successfully!</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact info section -->
+    <section class="contact-info-section">
+      <div class="container">
+        <div class="contact-cards">
+          <div class="contact-card">
+            <h3>Get in Touch</h3>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <span>glorynwokocha99@gmail.com</span>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <span>+234 806 774 735</span>
+            </div>
+          </div>
+          <div class="contact-card">
+            <h3>Location</h3>
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>88/89 Peter Odili Road, Port Harcourt, Rivers State.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <div class="footer-logo">
+              <span class="logo-icon">JD</span>
+              <span class="logo-text">Jo-Jean Imoh-Ita</span>
+            </div>
+            <p class="footer-address">
+              88/89 Peter Odili Road, Port Harcourt, Rivers State.
+            </p>
+          </div>
+          <div class="footer-section">
+            <div class="footer-links">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">Sign Up</a></li>
+              </ul>
+              <ul>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-section">
+            <h3>Connect With Us</h3>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; Jo-Jean Imoh-Ita. All right reserved. Designed by AMANI Art.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- cookies banner -->
+    <div class="cookie-banner" id="cookieBanner">
+      <div class="cookie-content">
+        <p>
+          We use cookies to improve your experience on our website. By
+          continuing to browse, you agree to our use of cookies.
+        </p>
+        <button class="btn-accept" id="acceptCookies">Accept</button>
+      </div>
+    </div>
+
+    <!-- scroll to top -->
+    <button class="scroll-top" id="scrollTop">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/script.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/validation.js"></script>
+  </body>
+</html>
