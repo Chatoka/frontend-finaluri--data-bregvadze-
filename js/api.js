@@ -3,13 +3,14 @@ const testimonialsContainer = document.querySelector(".testimonials-grid");
 async function fetchTestimonials() {
   try {
     let response = await fetch("https://jsonplaceholder.typicode.com/users");
-    console.log(response);
+    let imageResponse = await fetch("https://picsum.photos/60");
 
     if (!response.ok) {
       throw new Error("Server Error");
     }
 
     let data = await response.json();
+
     const testimonials = data.slice(0, 3);
 
     if (testimonialsContainer) {
@@ -22,7 +23,7 @@ async function fetchTestimonials() {
           <i class="fas fa-quote-right quote-icon"></i>
           <div class="testimonial-header">
             <div class="testimonial-image">
-              <div class="image-placeholder small"></div>
+              <div class="image-placeholder small"><img src="${imageResponse.url}" alt="Profile image random"></div>
             </div>
             <div class="testimonial-info">
               <h4>${user.name}</h4>
@@ -36,14 +37,6 @@ async function fetchTestimonials() {
     }
   } catch (error) {
     console.error("Error fetching testimonials:", error);
-
-    if (testimonialsContainer) {
-      testimonialsContainer.innerHTML = `
-        <p style="grid-column: 1/-1; text-align: center; color: #666;">
-          Unable to load testimonials at this time. Please try again later.
-        </p>
-      `;
-    }
   }
 }
 
