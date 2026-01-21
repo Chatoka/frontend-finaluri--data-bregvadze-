@@ -5,7 +5,7 @@
 
 .about-content {
   display: grid;
-  grid-template-columns: 560px 560px;
+  grid-template-columns: 1fr 1fr;
   gap: 60px;
   align-items: center;
 }

@@ -15,6 +15,7 @@ img {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
+  width: 100%;
 }
 
 /* header and navbat */
@@ -255,7 +256,7 @@ img {
 
 .footer-links {
   display: grid;
-  grid-template-columns: 260px 260px;
+  grid-template-columns: 1fr 1fr;
   gap: 30px;
 }
 

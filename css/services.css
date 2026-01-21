@@ -5,7 +5,7 @@
 
 .service-content {
   display: grid;
-  grid-template-columns: 560px 560px;
+  grid-template-columns: 1fr 1fr;
   gap: 60px;
   align-items: center;
 }
@@ -40,7 +40,7 @@
 
 .career-content {
   display: grid;
-  grid-template-columns: 560px 560px;
+  grid-template-columns: 1fr 1fr;
   gap: 60px;
   align-items: center;
 }
@@ -109,7 +109,7 @@
 
 .testimonials-grid {
   display: grid;
-  grid-template-columns: repeat(3, 360px);
+  grid-template-columns: repeat(3, 1fr);
   gap: 30px;
 }
 
